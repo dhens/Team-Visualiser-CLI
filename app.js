@@ -105,17 +105,14 @@ function shouldYouAddAnotherUser() {
             addUser();
         } else {
             console.log(`Your team array consists of: ${JSON.stringify(teamArr)}`)
-            console.log("Generating HTML! Exiting...")
-            // genHTML()
+            let myrender = render(teamArr);
+            fs.writeFile("team.html", render(teamArr), function(res, err) {
+                if (err) {
+                    throw err;
+                }
+                console.log("Successfully generated HTML! Exiting...");
+            });
         }
-    })
-    // ask questiion do you want to add additonal users
-    // if answer === yes, re-run creaatesuer function
-    // if no, genearte html page and exit process
+    });
 }
-
-function init() {
-    addUser();
-}
-
-init();
+addUser();
