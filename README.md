@@ -4,7 +4,7 @@
 ![TeamVisualized](/pics/MyTeam.PNG)
 
 ### Working Demo
-![TeamGif](/pics/ezgif-7-dc4169f14106.gif)
+(https://blooming-brook-63608.herokuapp.com/)
 
 ## Installation:
 1. Clone repo to your local machine
